@@ -1,0 +1,53 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.bio {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.contact {
+    background-color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive styles using media queries */
+@media (max-width: 768px) {
+    .bio, .contact {
+        padding: 10px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 18px;
+    }
+
+    .bio p, .contact p {
+        font-size: 14px;
+    }
+}
